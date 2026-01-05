@@ -51,7 +51,7 @@ class Program
         {
             if (serverPath != null && session.fullUrl.Contains(serverPath))
             {
-                if (session.fullUrl.Contains(".bin"))
+                if (session.fullUrl.Contains(".bin") || session.fullUrl.Contains(".cconb"))
                 {
                     OnHttpBin(session.fullUrl);
                     Console.WriteLine(session.fullUrl);
